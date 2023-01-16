@@ -11,7 +11,7 @@
 # To incorporate into your nnn config file, consider adding
 # a line such as:
 #
-# export NNN_PLUG='1:arcenc $nnn;2:arcdec $nnn; ... other plugins...
+# export NNN_PLUG='1:arcenc;2:arcdec; ... other plugins...
 #
 #... then invoke plugin access (e.g., ";") and select "1" or "2" for
 # "arcenc" (archive & encryption) or "arcdec" (decryption and 
@@ -37,7 +37,7 @@ echo "************************************************"
     echo 
     echo "Enter base name of ______.tar.gz.gpg archive"
     echo "to decrypt and unpack, or press ENTER to exit."
-    echo -n "without extensions)? -> "
+    echo -n "(without extensions)? -> "
     read -r ArchiveName
 
     if [ -e $ArchiveName.tar.gz.gpg ]; then
