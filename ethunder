@@ -51,6 +51,6 @@ fi
 thunderbird -compose 'attachment='$(cat $attach)
 
 # TO DO: Test for multiple file selections and either halt
-# of create a chain of attachments for Thunderbird in CLI command above
+# or create a chain of attachments for Thunderbird in CLI command above
 
 
